@@ -1,0 +1,38 @@
+.slackUserName {
+    text-align: center;
+    height: 400px;
+    width: 300px;
+    background-color: aliceblue;
+}
+.heading {
+    line-height: 400px;
+    text-align: center;
+}
+.parent {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.image {
+    width: 500px;
+    height: 400px;
+    image-resolution: 300dpi;
+}
+.parent > div {
+    margin: 3px;
+    padding: 3px;
+    font-size: 20px;
+    width: 50%;
+}
+.dayofweek {
+    padding-top: 30px;
+}
+.time {
+    padding-top: 30px;
+}
+.track {
+    padding-top: 30px;
+}
+a:hover {
+    color: red;
+}
