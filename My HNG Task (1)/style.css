@@ -1,41 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body {
-    font-weight: bold;
+    font-weight: 600;
+    font-family: Calibri;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: auto;
 }
-.slackUserName {
-    text-align: center;
-    height: 400px;
-    width: 300px;
-    background-color: aliceblue;
-}
-.heading {
-    line-height: 400px;
-    text-align: center;
-}
-.parent {
+.container {
+    border-radius: 15px;
+    width: 70%;
+    margin: 2rem auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 100%;
 }
 .image {
-    width: 500px;
-    height: 400px;
-    image-resolution: 300dpi;
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
 }
-.parent > div {
-    margin: 3px;
-    padding: 3px;
-    font-size: 20px;
-    width: 50%;
-}
-.dayofweek {
-    padding-top: 30px;
-}
-.time {
-    padding-top: 30px;
-}
-.track {
-    padding-top: 30px;
-}
+
 a:hover {
     color: red;
+}
+.card {
+    width: 24rem;
+    height: 34rem;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow:  0 10px 30px 5px rgba(0, 0, 0, 0.2);;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    margin: 0 auto;
+}
+.card:hover {
+    transform: scale(1.1);
 }

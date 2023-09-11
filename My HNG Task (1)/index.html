@@ -3,60 +3,38 @@
     <head>
         <title>My Task</title>
         <link rel="stylesheet" href="style.css">
-        <script></script>
     </head>
     <body>
-        <div class="parent">
-            <div data-testid="slackUserName" class="slackUserName">
-                <!--Slack User Name-->
-                <h1 class="heading">Jasper</h1>
-            </div>
+        <div class="container">
+            <div class="card">
+
             <div>
                 <!--Slack Display Image-->
-                <img src="myphoto.jpeg" alt="slackDisplayImage"
-                    class="image">
+                <img src="myphoto.jpeg" alt="slackDisplayImage" class="image">
+            </div>
+            <div>
+                <!--Slack User Name-->
+                <h1 class="heading" data-testid="slackUserName">cjNduagwuike</h1>
+            </div>
+
+            <!--Current Day Of the Week-->
+            <div class="dayofweek">
+                <p id="demo" data-testid="currentDayOfTheWeek"></p>
+            </div>
+            <!--Current UTC Time-->
+            <div data-testid="currentUTCTime" class="time" id="utc">
+            </div>
+            <!--My Track-->
+            <div class="track">
+                <p data-testid="myTrack">Frontend</p>
+            </div>
+            <!--My GitHub URL-->
+            <div>
+                <p><a href="https://github.com/cjnduagwuike/mytask.git"
+                        data-testid=“githubURL”>Github</a></p>
+            </div>
             </div>
         </div>
-        <!--Current Day Of the Week-->
-        <div data-testid="currentDayOfTheWeek" class="dayofweek">
-            <p style="display: inline;">Current Day Of The Week: <p id="demo"
-                    style="display: inline;"></p></p>
-            <script>
-                const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-                
-                const d = new Date();
-                let da = weekday[d.getDay()];
-                document.getElementById("demo").innerHTML = da;
-                </script>
-
-        </div>
-        <!--Current UTC Time-->
-        <div data-testid="currentUTCTime" class="time">
-            <p>Current UTC Time:</p>
-
-            <script>
-            const now = new Date();
-
-            const year = now.getUTCFullYear();
-            const day = now.getUTCDate();
-            const month = now.getUTCMonth() + 1;
-            const hours = now.getUTCHours();
-            const minutes = now.getUTCMinutes();
-            const seconds = now.getUTCSeconds();
-            const milliseconds = now.getUTCMilliseconds();
-
-            document.write(`${day}-${month}-${year}
-                ${hours}:${minutes}:${seconds}.${milliseconds}`);
-                </script>
-        </div>
-        <!--My Track-->
-        <div data-testid="myTrack" class="track">
-            <p>Track: Frontend</p>
-        </div>
-        <!--My GitHub URL-->
-        <div data-testid=“githubURL”>
-            <p>GitHub URL:</p><p><a
-                    href="https://github.com/cjnduagwuike/cjnduagwuike.github.io.git">Click Here</a></p>
-        </div>
+        <script src="script.js"></script>
     </body>
 </html>
